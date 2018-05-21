@@ -1,0 +1,56 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cross-env ESLINT=none APP_ENV=development roadhog dev",
+    "build": "cross-env ESLINT=none APP_ENV=production roadhog build",
+    "build:alpha": "cross-env ESLINT=none APP_ENV=alpha roadhog build"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "antd": "^3.5.2",
+    "classnames": "^2.2.5",
+    "dva": "^2.1.0",
+    "dva-loading": "^2.0.1",
+    "less-vars-to-js": "^1.2.1",
+    "lodash": "^4.17.10",
+    "nprogress": "^0.2.0",
+    "path-to-regexp": "^2.2.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.0.0-beta.47",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-dva-hmr": "^0.4.1",
+    "babel-plugin-import": "^1.7.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.1",
+    "draftjs-to-html": "^0.8.4",
+    "dva-model-extend": "^0.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "expect": "^22.4.3",
+    "git-revision-webpack-plugin": "^3.0.3",
+    "html-webpack-plugin": "^2.30.1",
+    "husky": "^0.12.0",
+    "mockjs": "^1.0.1-beta3",
+    "redbox-react": "^1.6.0",
+    "redux-logger": "^3.0.6",
+    "roadhog": "^2.3.0",
+    "roadhog-api-doc": "^1.0.3",
+    "url-polyfill": "^1.0.10"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}

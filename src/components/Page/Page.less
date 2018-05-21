@@ -1,0 +1,15 @@
+@import "../../themes/vars";
+
+.contentInner{
+  background-color: #fff;
+  padding: 24px;
+  box-shodow: @shadow-1;
+  min-height: e('calc(100vh - 160px)');
+}
+
+@media(max-width: 767px) {
+  .contentInner {
+    padding: 12px;
+    min-height: e("calc(100vh - 136px)");
+  }
+}

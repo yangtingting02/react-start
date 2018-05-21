@@ -1,0 +1,134 @@
+@import "../../themes/vars.less";
+
+.header {
+  :global .ant-menu-horizontal {
+    & > .ant-menu-submenu {
+      float: right;
+    }
+    border: none;
+    display: inline-block;
+    & > .ant-menu-item {
+      height: 64px;
+      line-height: 64px;
+      vertical-align: middle;
+      padding-top: 2px;
+    }
+  }
+  :global .ant-dropdown-trigger {
+    white-space: nowrap;
+  }
+  box-shadow: @shadow-2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  background-color: @head-color;
+  z-index: 999;
+
+  .listItem {
+    flex: 0 0 auto;
+  }
+
+  .pullSider .button {
+    width: 42px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    color: @head-text-color;
+    transition: @transition-ease-in;
+    &:hover {
+      color: @white;
+      background-color: fade(@primary-color, 15%);
+    }
+  }
+
+  .logo {
+    width: 54px;
+    height: 54px;
+    margin-right: 12px;
+
+    & > img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .text {
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 10%;
+    color: #ee9ab0;
+    white-space: nowrap;
+  }
+
+  .listItem:nth-child(3) {
+    margin-right: auto;
+  }
+
+  .rightWrapper {
+    display: flex;
+    margin-right: 24px;
+    font-size: 14px;
+    height: 64px;
+    line-height: 64px;
+    .action {
+      cursor: pointer;
+      padding: 0 12px;
+      transition: all .3s;
+      color: @head-text-color;
+      > i {
+        font-size: 16px;
+        vertical-align: middle;
+      }
+      &:global(.ant-popover-open),
+      &:hover {
+        background: @hover-1;
+      }
+    }
+    .account {
+      .icon {
+        margin: 20px 8px 20px 0;
+      }
+    }
+  }
+}
+
+.popovermenu {
+  width: 280px;
+  margin-left: 6px;
+
+  :global .ant-popover-inner-content {
+    padding: 0;
+
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-vertical .ant-menu-item {
+      border-right: 0;
+      height: 48px;
+      line-height: 48px;
+    }
+
+    .ant-menu-inline .ant-menu-item-selected,
+    .ant-menu-inline .ant-menu-selected {
+      border-right: 0;
+    }
+  }
+}
+
+.menu {
+  :global(.action) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    padding: 10px;
+  }
+
+  .icon {
+    margin-right: 4px;
+  }
+  .ant-menu-item:hover {
+    color: #25aee5;
+  }
+}
